@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+    <record id="provider_ollama_fastapi" model="muk_ai.provider">
+        <field name="name">ollama_fastapi</field>
+        <field name="code">default</field>
+        <field name="api_region">default</field>
+        <field name="sequence">50</field>
+        <field name="request_timeout">120</field>
+        <field name="idle_timeout">90</field>
+        <field name="max_tokens">4096</field>
+    </record>
+</odoo>

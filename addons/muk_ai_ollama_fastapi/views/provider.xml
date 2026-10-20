@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_muk_ai_provider_form_ollama" model="ir.ui.view">
+        <field name="name">muk_ai.provider.form.ollama.fastapi</field>
+        <field name="model">muk_ai.provider</field>
+        <field name="inherit_id" ref="muk_ai.view_muk_ai_provider_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header/button[@name='action_test_connection']" position="after">
+                <button name="action_sync_ollama_models" type="object"
+                        string="Synchronize Models" class="btn-secondary"
+                        invisible="name != 'ollama_fastapi'" groups="base.group_system"/>
+            </xpath>
+            <xpath expr="//field[@name='api_key']" position="after">
+                <field name="ollama_streaming" invisible="name != 'ollama_fastapi'"
+                       groups="base.group_system"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

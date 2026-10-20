@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- This addon introduces no database model. Provider secrets remain guarded
+         by the base.group_system restrictions declared by muk_ai. -->
+</odoo>
